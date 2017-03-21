@@ -12,7 +12,15 @@ only if both are negative.
 
 def pos_neg(a, b, negative):
     pass
-
+public boolean posNeg(int a, int b,boolean negative) {
+    if (negative && a < 0 && b < 0) {
+    return true;
+    }
+    else if (!negative && ((a < 0 && b > 0) || (a > 0 && b < 0))) {
+    return true;
+    }
+    return false;
+    }
 
 # Expected outputs:
 
@@ -43,6 +51,16 @@ years (for example, 2000).
 -----------------------------------------------------------------------
 
 """
+welcome the user
+        prompt for input of INPUT_YEAR type = int
+        store the input in constants INPUT_YEAR
+
+        if INPUT_YEAR < 1582
+            out put "i can not count that far back. I Can only evaluate years after 1582."
+        else if ((INPUT_YEAR % 4 == 0 && INPUT_YEAR % 100 > 0) OR (INPUT_YEAR % 400 == 0))
+            out put "INPUT_YEAR is a leap year"
+        else
+            out put "INPUT_YEAR is a leap year
 
 
 def leap_year(year):
@@ -69,6 +87,21 @@ Write a function with loops that computes the sum of all squares between
 -----------------------------------------------------------------------
 
 """
+public class
+{
+public static void main(String []args ) {
+    Scanner reader = new Scanner(System.in);
+    int n = 1;
+    int sum = 0;
+    while (n <= 100) {
+        n = (n*n);
+        n++;
+
+    sum = (sum + n);
+    }
+    System.out.println(sum);
+}
+}
 
 
 def sum_squares(n):
